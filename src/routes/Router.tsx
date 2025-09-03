@@ -1,11 +1,20 @@
-// import AdminRoute from "./AdminRoute";
-// import GuestRoute from "./GuestRoute";
+import Contexts from "../contexts/contexts";
+import AdminRoute from "./AdminRoute";
+import GuestRoute from "./GuestRoute";
 import UserRoute from "./UserRoute";
+import './Router.css';
 
 export default function Router() {
-  // const currentUser = <AdminRoute />;
-  // const currentUser = <GuestRoute />;
-  const currentUser = <UserRoute />;
+  const userType = Contexts().userTypeContext;
 
-  return <div>{currentUser}</div>;
+  let currentUser = <GuestRoute />;
+  
+  if (userType === "Admin") {
+    currentUser = <AdminRoute />;
+  }
+  else if (userType === "RegUser") {
+    currentUser = <UserRoute />;
+  }
+
+  return <div className="router">{currentUser}</div>;
 }
