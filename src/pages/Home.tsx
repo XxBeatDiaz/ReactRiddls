@@ -57,7 +57,7 @@ export default function Home() {
         {leaderbordLink}
         {editModeLink}
         {riddlesLink}
-        {msgForGuest}
+        {userType === "Guest" && msgForGuest}
       </div>
     </div>
   );

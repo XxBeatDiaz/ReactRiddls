@@ -34,3 +34,18 @@ button {
     align-self: center;
     cursor: pointer;
 }
+
+.sendBtn {
+  border: none;
+  height: 14%;
+  font-size: larger;
+  border-radius: 4px;
+  letter-spacing: 3px;
+  background-color: coral;
+  border: 2px solid white;
+}
+
+.sendBtn:hover {
+  background-color: rgba(255, 127, 80, 0.788);
+  color: white;
+}

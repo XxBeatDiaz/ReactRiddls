@@ -10,8 +10,8 @@
 }
 
 .title {
-    margin: 4% 0;
-    letter-spacing: 4px;
+  margin: 4% 0;
+  letter-spacing: 4px;
 }
 
 .mainButtons {
@@ -22,7 +22,8 @@
   width: 40%;
   height: 37%;
 
-  background-color: aliceblue;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2px;
 }
 
 .mainButton {
@@ -32,30 +33,34 @@
   height: 30%;
 
   background-color: coral;
+  border: 2px solid rgba(255, 255, 255, 0.587);
+  border-radius: 2px;
 }
 
 .mainButton:hover {
-    background-color: rgba(223, 112, 72, 0.868);
-    color: rgb(255, 255, 255);
+  background-color: rgba(223, 112, 72, 0.868);
+  color: rgb(255, 255, 255);
 }
 
 .asideButtons {
-    display: flex;
-    justify-content: space-around;
-    width: 48%;
-    height: 30%;
+  display: flex;
+  justify-content: space-around;
+  width: 48%;
+  height: 30%;
 }
 
 .asideButton {
-    text-align: center;
-    align-content: center;
-    width: 28%;
-    height: 30%;
-    margin-top: 4%;
-    background-color: yellow;
+  text-align: center;
+  align-content: center;
+  width: 28%;
+  height: 30%;
+  margin-top: 4%;
+  background-color: yellow;
+  border: 2px solid white;
+  border-radius: 2px;
 }
 
 .asideButton:hover {
-    background-color: rgb(189, 189, 4);
-    color: rgb(255, 255, 255);
+  background-color: rgb(189, 189, 4);
+  color: rgb(255, 255, 255);
 }
