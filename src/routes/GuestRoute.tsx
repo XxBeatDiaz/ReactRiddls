@@ -4,20 +4,22 @@ import Play from "../pages/Play";
 import Login from "../pages/Login";
 import NotAllowdPage from "../pages/NotAllowdPage";
 import NotFoundPage from "../pages/NotFoundPage";
+import './routes.css';
 
 export default function GuestRoute() {
   return (
-    <div>
-      <div>Guest</div>
-      <Routes>
-        <Route path="/Home" element={<Home />} />
-        <Route path="/Play" element={<Play />} />
-        <Route path="/Login" element={<Login />} />
-        <Route path="/Leaderbord" element={<NotAllowdPage />} />
-        <Route path="/EditMode" element={<NotAllowdPage />} />
-        <Route path="/AdminRiddles" element={<NotAllowdPage />} />
-        <Route path="*" element={<NotFoundPage />} />
-      </Routes>
+    <div className="user">
+      <div className="routes">
+        <Routes>
+          <Route path="/Home" element={<Home />} />
+          <Route path="/Play" element={<Play />} />
+          <Route path="/Login" element={<Login />} />
+          <Route path="/Leaderbord" element={<NotAllowdPage />} />
+          <Route path="/EditMode" element={<NotAllowdPage />} />
+          <Route path="/AdminRiddles" element={<NotAllowdPage />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+      </div>
     </div>
   );
 }
